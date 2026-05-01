@@ -22,7 +22,7 @@ public class Main {
                     System.out.println("сколько хотите снять?");
                     sym = scanner.nextInt();
                     ATM_API.take_off(sym);
-                    if (ATM_API.itog == "true"){
+                    if (ATM_API.itog.equals("true")){
                         System.out.println("на вашем балансе: " + ATM_API.balance);
                     }else {
                         System.out.println("на вашем балансе недостаточно денег");
